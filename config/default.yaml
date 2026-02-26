@@ -1,0 +1,29 @@
+# GeoTime 默认配置
+
+# 数据加载设置
+data:
+  age_column: "Age(Ma)"
+  value_column: null
+  time_filter: null
+
+# 加权平均设置
+weighted_average:
+  weights: [0.4, 0.15, 0.15, 0.15, 0.15]
+  window: 5
+
+# SSA设置
+ssa:
+  window_size: 200
+  n_components: 4
+
+# 频谱分析设置
+spectrum:
+  method: "mtm"  # 或 "lomb_scargle"
+  nperseg: 128
+  n_peaks: 3
+
+# 输出设置
+output:
+  save_csv: true
+  save_plots: true
+  dpi: 150
